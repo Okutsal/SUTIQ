@@ -5,50 +5,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>sutIQ - Süt Kalitesi ve Danışmanlık</title>
-  <link rel="stylesheet" href="styles/main.css" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>sutIQ</h1>
-    <p>Süt Kalitesi, İnek Sinyalleri ve Karbon Ayak İzi Danışmanlığı</p>
-    <nav>
-      <a href="#egitimler">Eğitimler</a> |
-      <a href="#blog">Blog</a> |
-      <a href="#iletisim">İletişim</a>
-    </nav>
+  <header class="hero">
+    <div class="overlay">
+      <h1>SÜT KALİTESİ, İNEK SİNYALLERİ, HAYVAN REFAHI VE ÇİFTLİKTE KARBON AYAK İZİNİN DÜŞÜRÜLMESİ ÜZERİNE EĞİTİM & DANIŞMANLIK</h1>
+      <p>Sürdürülebilir süt üretimi için doğa dostu çözümler</p>
+      <a href="#iletisim" class="btn">Ücretsiz İlk Danışmanlık Alın</a>
+    </div>
   </header>
-
-  <main>
-    <section id="egitimler">
-      <h2>Eğitim Modülleri</h2>
-      <ul>
-        <li>Süt Kalitesi Eğitimi</li>
-        <li>İnek Sinyalleri Eğitimi</li>
-        <li>Karbon Ayak İzi Azaltma Eğitimi</li>
-      </ul>
-    </section>
-
-    <section id="blog">
-      <h2>Blog</h2>
-      <article>
-        <h3>Yüksek Kaliteli Süt Üretimi İçin 5 İpucu</h3>
-        <p>Sağım hijyeninden yem kalitesine kadar püf noktaları...</p>
-      </article>
-    </section>
-
-    <section id="iletisim">
-      <h2>İletişim</h2>
-      <form>
-        <label>Ad Soyad: <input type="text" name="ad" /></label><br />
-        <label>E-posta: <input type="email" name="eposta" /></label><br />
-        <label>Mesajınız:<br /><textarea name="mesaj"></textarea></label><br />
-        <button type="submit">Gönder</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 sutIQ | Sürdürülebilir Süt Üretimi</p>
-  </footer>
+  <section class="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <div class="cards">
+      <div class="card">Süt Kalitesi Eğitimi</div>
+      <div class="card">İnek Sinyalleri ve Refah Eğitimi</div>
+      <div class="card">Karbon Ayak İzi Analizi</div>
+      <div class="card">Personel Eğitimi Programları</div>
+    </div>
+  </section>
+  <section class="egitim">
+    <h2>Eğitimler ve Modüller</h2>
+    <img src="cows.jpg" alt="İnekler">
+    <a href="#blog" class="btn">Daha Fazlasını Gör</a>
+  </section>
+  <section class="blog">
+    <h2>Blog</h2>
+    <p>Süt kalitesi, inşirair, aniihee itilak ve tipplar</p>
+    <a href="#blog" class="btn">Tüm Yazıları Gör</a>
+  </section>
+  <section class="referanslar">
+    <h2>Referanslar / Başarı Hikayeleri</h2>
+    <blockquote>"Bir konuğa ekonomine sahip saklı dialar."</blockquote>
+  </section>
+  <section class="iletisim" id="iletisim">
+    <h2>İletişim</h2>
+    <form>
+      <input type="text" placeholder="Ad Soyad" required />
+      <input type="email" placeholder="E-posta" required />
+      <textarea placeholder="Mesajınız"></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
 </body>
 </html>
