@@ -1,12 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sutIQ - Süt Danışmanlık</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sutIQ - Süt Kalitesi ve Danışmanlık</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>sutIQ</h1>
+    <p>Süt Kalitesi, İnek Sinyalleri ve Karbon Ayak İzi Danışmanlığı</p>
+    <nav>
+      <a href="#egitimler">Eğitimler</a> |
+      <a href="#blog">Blog</a> |
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="egitimler">
+      <h2>Eğitim Modülleri</h2>
+      <ul>
+        <li>Süt Kalitesi Eğitimi</li>
+        <li>İnek Sinyalleri Eğitimi</li>
+        <li>Karbon Ayak İzi Azaltma Eğitimi</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>Yüksek Kaliteli Süt Üretimi İçin 5 İpucu</h3>
+        <p>Sağım hijyeninden yem kalitesine kadar püf noktaları...</p>
+      </article>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <form>
+        <label>Ad Soyad: <input type="text" name="ad" /></label><br />
+        <label>E-posta: <input type="email" name="eposta" /></label><br />
+        <label>Mesajınız:<br /><textarea name="mesaj"></textarea></label><br />
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 sutIQ | Sürdürülebilir Süt Üretimi</p>
+  </footer>
+</body>
 </html>
