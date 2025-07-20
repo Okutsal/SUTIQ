@@ -1,24 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>sutIQ</title>
-  <link rel="stylesheet" href="public/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sutIQ - Süt Kalitesi ve Hayvan Refahı</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; }
+        header {
+            background: url('cow-hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        .btn { background: #1e5af0; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px;}
+        section { padding: 40px 20px; }
+        .features, .modules { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+        .feature-box, .module-box { flex: 1 1 200px; background: #f3f3f3; padding: 20px; border-radius: 8px; text-align: center; }
+        .blog, .contact, .reference { margin-top: 40px; }
+        footer { background: #1e5af0; color: white; text-align: center; padding: 20px; }
+    </style>
 </head>
 <body>
-  
-<header>
-  <h2>sutIQ</h2>
-  <nav>
-    <a href="index.html">Anasayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="hizmetler.html">Hizmetler</a>
-    <a href="blog.html">Blog</a>
-    <a href="iletisim.html">İletişim</a>
-  </nav>
-</header>
-
-  <section><h1>Hoş Geldiniz!</h1><p>sutIQ ile sürdürülebilir süt danışmanlığı</p></section>
-  <footer><p>&copy; 2025 sutIQ</p></footer>
+    <header>
+        <h1>SÜT KALİTESİ, İNEK İŞARETLERİ, HAYVAN REFAHI VE <br>ÇİFTLİKLERDE KARBON AYAK İZİNİ AZALTMA EĞİTİM & DANIŞMANLIK</h1>
+        <p>Sürdürülebilir süt üretimi için doğaya dost çözümler</p>
+        <a href="#contact" class="btn">Ücretsiz Danışmanlık Al</a>
+    </header>
+    <section>
+        <h2>Hakkımızda</h2>
+        <div class="features">
+            <div class="feature-box">Süt Kalitesi Eğitimi</div>
+            <div class="feature-box">İnek İşaretleri ve Refah Eğitimi</div>
+            <div class="feature-box">Çiftlik Karbon Ayak İzi Analizi ve Azaltma</div>
+            <div class="feature-box">Çalışan Programları</div>
+        </div>
+    </section>
+    <section class="modules">
+        <h2>Eğitimler & Modüller</h2>
+        <img src="cows.jpg" alt="Cows" style="width:100%; max-width:600px; border-radius:10px;">
+        <div><a class="btn" href="#blog">Daha Fazlasını Gör</a></div>
+    </section>
+    <section class="blog">
+        <h2>Blog</h2>
+        <p>Süt kalitesi, mastitis, yeme tipleri ve daha fazlası</p>
+        <a class="btn" href="#blog">Tüm Yazıları Gör</a>
+    </section>
+    <section class="reference">
+        <h2>Referanslar / Başarı Öyküleri</h2>
+        <blockquote>“Konu gözlerimi açtı”</blockquote>
+    </section>
+    <section class="contact" id="contact">
+        <h2>İletişim</h2>
+        <form>
+            <input type="text" placeholder="Ad Soyad" required><br><br>
+            <input type="email" placeholder="E-posta" required><br><br>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea><br><br>
+            <button class="btn">Gönder</button>
+        </form>
+    </section>
+    <footer>
+        © 2025 sutIQ - Tüm hakları saklıdır.
+    </footer>
 </body>
 </html>
