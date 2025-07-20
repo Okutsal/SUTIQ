@@ -2,69 +2,18 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>sutIQ - Süt Danışmanlığı</title>
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
-        header {
-            height: 100vh;
-            background: url('cow-hero.jpg') no-repeat center center/cover;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-        .card {
-            background: #f9f9f9;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 30px;
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>sutIQ - Süt Kalitesi ve Danışmanlık</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>sutIQ</h1>
-        <p>Süt Kalitesi • İnek Refahı • Karbon Ayak İzi</p>
-        <button onclick="alert('Danışmanlık için bize ulaşın')">Ücretsiz Danışmanlık</button>
-    </header>
-
-    <section>
-        <h2>Hizmetlerimiz</h2>
-        <div class="services">
-            <div class="card">Süt Kalitesi Eğitimi</div>
-            <div class="card">İnek İşaretleri ve Refahı</div>
-            <div class="card">Karbon Ayak İzi Analizi</div>
-            <div class="card">Çalışan Eğitim Programları</div>
+    <header class="hero">
+        <div class="overlay">
+            <h1>sutIQ</h1>
+            <p>Süt Kalitesi, İnek Refahı ve Karbon Ayak İzi Danışmanlığı</p>
+            <a href="#iletisim" class="cta">Ücretsiz Danışmanlık Al</a>
         </div>
-    </section>
-
-    <section>
-        <h2>Eğitim ve Gelişim</h2>
-        <img src="cows.jpg" alt="Eğitim" width="80%">
-    </section>
-
-    <footer>
-        <p>İletişim: info@sutiq.com | © 2025 sutIQ</p>
-    </footer>
+    </header>
 </body>
 </html>
