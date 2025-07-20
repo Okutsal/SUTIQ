@@ -3,65 +3,68 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sutIQ - Süt Kalitesi ve Hayvan Refahı</title>
+    <title>sutIQ - Süt Danışmanlığı</title>
     <style>
-        body { margin: 0; font-family: sans-serif; }
+        body { margin: 0; font-family: Arial, sans-serif; }
         header {
+            height: 100vh;
             background: url('cow-hero.jpg') no-repeat center center/cover;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 100px 20px;
         }
-        h1 { font-size: 2em; margin-bottom: 10px; }
-        .btn { background: #1e5af0; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px;}
-        section { padding: 40px 20px; }
-        .features, .modules { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
-        .feature-box, .module-box { flex: 1 1 200px; background: #f3f3f3; padding: 20px; border-radius: 8px; text-align: center; }
-        .blog, .contact, .reference { margin-top: 40px; }
-        footer { background: #1e5af0; color: white; text-align: center; padding: 20px; }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>SÜT KALİTESİ, İNEK İŞARETLERİ, HAYVAN REFAHI VE <br>ÇİFTLİKLERDE KARBON AYAK İZİNİ AZALTMA EĞİTİM & DANIŞMANLIK</h1>
-        <p>Sürdürülebilir süt üretimi için doğaya dost çözümler</p>
-        <a href="#contact" class="btn">Ücretsiz Danışmanlık Al</a>
+        <h1>sutIQ</h1>
+        <p>Süt Kalitesi • İnek Refahı • Karbon Ayak İzi</p>
+        <button onclick="alert('Danışmanlık için bize ulaşın')">Ücretsiz Danışmanlık</button>
     </header>
+
     <section>
-        <h2>Hakkımızda</h2>
-        <div class="features">
-            <div class="feature-box">Süt Kalitesi Eğitimi</div>
-            <div class="feature-box">İnek İşaretleri ve Refah Eğitimi</div>
-            <div class="feature-box">Çiftlik Karbon Ayak İzi Analizi ve Azaltma</div>
-            <div class="feature-box">Çalışan Programları</div>
+        <h2>Hizmetlerimiz</h2>
+        <div class="services">
+            <div class="card">Süt Kalitesi Eğitimi</div>
+            <div class="card">İnek İşaretleri ve Refahı</div>
+            <div class="card">Karbon Ayak İzi Analizi</div>
+            <div class="card">Çalışan Eğitim Programları</div>
         </div>
     </section>
-    <section class="modules">
-        <h2>Eğitimler & Modüller</h2>
-        <img src="cows.jpg" alt="Cows" style="width:100%; max-width:600px; border-radius:10px;">
-        <div><a class="btn" href="#blog">Daha Fazlasını Gör</a></div>
+
+    <section>
+        <h2>Eğitim ve Gelişim</h2>
+        <img src="cows.jpg" alt="Eğitim" width="80%">
     </section>
-    <section class="blog">
-        <h2>Blog</h2>
-        <p>Süt kalitesi, mastitis, yeme tipleri ve daha fazlası</p>
-        <a class="btn" href="#blog">Tüm Yazıları Gör</a>
-    </section>
-    <section class="reference">
-        <h2>Referanslar / Başarı Öyküleri</h2>
-        <blockquote>“Konu gözlerimi açtı”</blockquote>
-    </section>
-    <section class="contact" id="contact">
-        <h2>İletişim</h2>
-        <form>
-            <input type="text" placeholder="Ad Soyad" required><br><br>
-            <input type="email" placeholder="E-posta" required><br><br>
-            <textarea placeholder="Mesajınız" rows="5" required></textarea><br><br>
-            <button class="btn">Gönder</button>
-        </form>
-    </section>
+
     <footer>
-        © 2025 sutIQ - Tüm hakları saklıdır.
+        <p>İletişim: info@sutiq.com | © 2025 sutIQ</p>
     </footer>
 </body>
 </html>
