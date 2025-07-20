@@ -1,51 +1,39 @@
 
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sutIQ - Süt Kalitesi ve Danışmanlık</title>
-  <link href="style.css" rel="stylesheet" />
-</head>
-<body>
-  <header class="hero">
-    <div class="overlay">
-      <h1>SÜT KALİTESİ, İNEK SİNYALLERİ, HAYVAN REFAHI VE ÇİFTLİKTE KARBON AYAK İZİNİN DÜŞÜRÜLMESİ ÜZERİNE EĞİTİM & DANIŞMANLIK</h1>
-      <p>Sürdürülebilir süt üretimi için doğa dostu çözümler</p>
-      <a href="#iletisim" class="btn">Ücretsiz İlk Danışmanlık Alın</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sutIQ</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .background {
+        background-image: url('/images/sutiq-arka-plan.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="content">
+      <h1>sutIQ Danışmanlık</h1>
+      <p>Süt kalitesi, inek sinyalleri, hayvan refahı ve karbon ayak izi azaltımı</p>
     </div>
-  </header>
-  <section class="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <div class="cards">
-      <div class="card">Süt Kalitesi Eğitimi</div>
-      <div class="card">İnek Sinyalleri ve Refah Eğitimi</div>
-      <div class="card">Karbon Ayak İzi Analizi</div>
-      <div class="card">Personel Eğitimi Programları</div>
-    </div>
-  </section>
-  <section class="egitim">
-    <h2>Eğitimler ve Modüller</h2>
-    <img src="cows.jpg" alt="İnekler">
-    <a href="#blog" class="btn">Daha Fazlasını Gör</a>
-  </section>
-  <section class="blog">
-    <h2>Blog</h2>
-    <p>Süt kalitesi, inşirair, aniihee itilak ve tipplar</p>
-    <a href="#blog" class="btn">Tüm Yazıları Gör</a>
-  </section>
-  <section class="referanslar">
-    <h2>Referanslar / Başarı Hikayeleri</h2>
-    <blockquote>"Bir konuğa ekonomine sahip saklı dialar."</blockquote>
-  </section>
-  <section class="iletisim" id="iletisim">
-    <h2>İletişim</h2>
-    <form>
-      <input type="text" placeholder="Ad Soyad" required />
-      <input type="email" placeholder="E-posta" required />
-      <textarea placeholder="Mesajınız"></textarea>
-      <button type="submit">Gönder</button>
-    </form>
-  </section>
-</body>
+  </body>
 </html>
